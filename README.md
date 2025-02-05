@@ -8,7 +8,7 @@ Do a GET request to /imd?lat=#{lat}&lon=#{long}
 
 An instance of this application is hosted at https://imd.abscond.org
 
-Example hosted request: https://imd.abscond.org/imd?lat=50.96&lon=1.17
+Example hosted request: https://imd.abscond.org/imd?lat=50.96&lon=-1.17
 
 ## Installation
 
