@@ -27,7 +27,7 @@ class IMDApi < Sinatra::Base
       LIMIT 1
     SQL
 
-    result = db_connection.get_first_row(query, [lon, lat])
+    result = db_connection.execute(query, [lon.to_f, lat.to_f]).first
 
     if result
       result.delete('geometry')
