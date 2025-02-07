@@ -3,6 +3,8 @@ require 'json'
 require 'sqlite3'
 
 class IMDApi < Sinatra::Base
+  set :protection, :except => [:json_csrf]
+
   def db_connection
     return @db if @db
     @db = SQLite3::Database.new('imd.sqlite', readonly: true)
